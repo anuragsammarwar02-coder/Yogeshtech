@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0b0d" />
+
+  <meta
+    name="description"
+    content="YogeshTech (Pune) | Educational Telegram Community"
+  />
+
+  <title>YogeshTech (Pune) | Official</title>
+
+  <!-- Meta Pixel Code -->
+  <!-- Replace YOUR_PIXEL_ID with your real Pixel ID from Events Manager -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'YOUR_PIXEL_ID');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    :root {
+      --bg: #080a0d;
+      --surface: #11141a;
+      --surface-2: #171b23;
+      --border: #292e39;
+      --text: #f4f5f7;
+      --muted: #9298a6;
+      --gold: #f0c14b;
+      --gold-soft: rgba(240, 193, 75, 0.10);
+      --blue: #2d8cff;
+      --blue-dark: #1768c8;
+      --green: #3ed18f;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(
+          circle at top,
+          rgba(240, 193, 75, 0.07),
+          transparent 35%
+        ),
+        var(--bg);
+      color: var(--text);
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 42px 18px 50px;
+    }
+
+    /* HEADER */
+
+    .header {
+      text-align: center;
+      margin-bottom: 34px;
+    }
+
+    .logo-wrap {
+      position: relative;
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 16px;
+    }
+
+    .logo {
+      width: 96px;
+      height: 96px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      border: 2px solid rgba(240, 193, 75, 0.45);
+      box-shadow:
+        0 0 0 7px rgba(240, 193, 75, 0.035),
+        0 0 45px rgba(240, 193, 75, 0.16);
+    }
+
+    /* placeholder logo (used until a real image URL is added) */
+    .logo-placeholder {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--surface-2), var(--surface));
+      border: 2px dashed rgba(240, 193, 75, 0.45);
+      color: var(--gold);
+      font-weight: 800;
+      font-size: 26px;
+      letter-spacing: 0.5px;
+    }
+
+    .online-dot {
+      position: absolute;
+      right: 2px;
+      bottom: 5px;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background: var(--green);
+      border: 3px solid var(--bg);
+      box-shadow: 0 0 12px rgba(62, 209, 143, 0.65);
+    }
+
+    .brand {
+      font-size: 24px;
+      line-height: 1.25;
+      font-weight: 850;
+      letter-spacing: 0.2px;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .subtitle {
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .subscriber-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 15px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(62, 209, 143, 0.30);
+      background: rgba(62, 209, 143, 0.07);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    .subscriber-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+
+    /* HERO */
+
+    .hero {
+      text-align: center;
+      margin-bottom: 27px;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      line-height: 1.2;
+      font-weight: 850;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      max-width: 500px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    /* CTA */
+
+    .cta-box {
+      margin: 30px 0 34px;
+      text-align: center;
+    }
+
+    .cta-primary {
+      width: 100%;
+      min-height: 56px;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      border-radius: 14px;
+      background: linear-gradient(
+        135deg,
+        var(--blue),
+        var(--blue-dark)
+      );
+
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 750;
+
+      box-shadow:
+        0 12px 30px rgba(45, 140, 255, 0.23);
+
+      transition:
+        transform 0.16s ease,
+        filter 0.16s ease;
+    }
+
+    .cta-primary:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.07);
+    }
+
+    .cta-primary:active {
+      transform: translateY(0);
+    }
+
+    .telegram-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #fff;
+      color: var(--blue-dark);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .cta-note {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* SECTION */
+
+    .section-title {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 750;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 13px;
+    }
+
+    /* FEATURES */
+
+    .features {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+
+      padding: 16px;
+
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+    }
+
+    .feature-icon {
+      width: 38px;
+      height: 38px;
+      flex: 0 0 38px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 10px;
+      background: var(--gold-soft);
+
+      font-size: 18px;
+    }
+
+    .feature h3 {
+      font-size: 14px;
+      font-weight: 750;
+      margin-bottom: 3px;
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    /* ABOUT */
+
+    .about {
+      padding: 19px 17px;
+      margin-bottom: 20px;
+
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+    }
+
+    .about h2 {
+      color: var(--gold);
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .about p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    /* DISCLAIMER */
+
+    .disclaimer {
+      padding: 14px;
+      margin-bottom: 24px;
+
+      background: #101218;
+      border: 1px solid #252a33;
+      border-radius: 11px;
+    }
+
+    .disclaimer strong {
+      display: block;
+      color: #cdd1d9;
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+
+    .disclaimer p {
+      color: #707686;
+      font-size: 11px;
+      line-height: 1.6;
+    }
+
+    /* SECONDARY CTA */
+
+    .cta-secondary {
+      width: 100%;
+      min-height: 49px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 12px;
+      border: 1px solid var(--blue);
+
+      color: var(--blue);
+      background: transparent;
+
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+
+      transition: background 0.15s ease;
+    }
+
+    .cta-secondary:hover {
+      background: rgba(45, 140, 255, 0.08);
+    }
+
+    /* FOOTER */
+
+    footer {
+      margin-top: 35px;
+      text-align: center;
+      color: #555b69;
+      font-size: 11px;
+      line-height: 1.6;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 8px;
+    }
+
+    .footer-links a {
+      color: #727887;
+      text-decoration: none;
+      font-size: 11px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+    /* RESPONSIVE */
+
+    @media (min-width: 600px) {
+      .wrap {
+        padding-top: 55px;
+      }
+
+      .hero h1 {
+        font-size: 31px;
+      }
+
+      .brand {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="wrap">
+
+    <!-- HEADER -->
+    <header class="header">
+
+      <div class="logo-wrap">
+        <!--
+          Replace the placeholder below with your real logo:
+          <img class="logo" src="YOUR_IMAGE_URL" alt="YogeshTech" />
+        -->
+        <div class="logo-placeholder">YT</div>
+
+        <span class="online-dot"></span>
+      </div>
+
+      <div class="brand">
+        <span>YogeshTech</span> (Pune)
+      </div>
+
+      <p class="subtitle">
+        Official Telegram Community
+      </p>
+
+      <div class="subscriber-badge">
+        <span class="subscriber-dot"></span>
+        Educational Channel · Active
+      </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <h1>
+        Welcome to <span>YogeshTech</span>
+      </h1>
+
+      <p>
+        Join the official YogeshTech (Pune) community and stay
+        connected with educational content, useful tech resources
+        and regular updates.
+      </p>
+
+    </section>
+
+
+    <!-- PRIMARY CTA -->
+    <div class="cta-box">
+
+      <a
+        class="cta-primary"
+        href="https://t.me/+2B2X3SRCRJU1YWQ1"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-cta="primary"
+      >
+        <span class="telegram-icon">➤</span>
+        Join Telegram Channel
+      </a>
+
+      <p class="cta-note">
+        Free community · Educational content · Regular updates
+      </p>
+
+    </div>
+
+
+    <!-- FEATURES -->
+    <p class="section-title">
+      What you'll find
+    </p>
+
+    <section class="features">
+
+      <article class="feature">
+        <div class="feature-icon">📚</div>
+
+        <div>
+          <h3>Educational Content</h3>
+
+          <p>
+            Simple and useful educational content designed
+            to help you learn and understand important concepts.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="feature">
+        <div class="feature-icon">💻</div>
+
+        <div>
+          <h3>Tech Tips &amp; Guides</h3>
+
+          <p>
+            Practical tips, how-tos and general tech guidance
+            shared with the community.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="feature">
+        <div class="feature-icon">💡</div>
+
+        <div>
+          <h3>Learning Resources</h3>
+
+          <p>
+            Useful information and resources for members
+            interested in continuous learning.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="feature">
+        <div class="feature-icon">👥</div>
+
+        <div>
+          <h3>Active Community</h3>
+
+          <p>
+            Join the Telegram community and stay connected
+            with regular updates.
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about">
+
+      <h2>
+        About YogeshTech
+      </h2>
+
+      <p>
+        YogeshTech (Pune) is an educational Telegram community
+        sharing general information, learning resources, useful
+        tips and community updates.
+      </p>
+
+    </section>
+
+
+    <!-- DISCLAIMER -->
+    <section
+      class="disclaimer"
+      id="disclaimer"
+    >
+
+      <strong>
+        Important disclaimer
+      </strong>
+
+      <p>
+        All information shared through this website and Telegram
+        community is for general educational and informational
+        purposes only. It is not professional advice of any kind.
+        Please use your own judgement and do your own research
+        before acting on any information shared here.
+      </p>
+
+    </section>
+
+
+    <!-- SECONDARY CTA -->
+    <a
+      class="cta-secondary"
+      href="https://t.me/+2B2X3SRCRJU1YWQ1"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-cta="secondary"
+    >
+      Open Telegram Channel
+    </a>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+      <p>
+        © 2026 YogeshTech (Pune) · Educational content only
+      </p>
+
+      <div class="footer-links">
+
+        <a
+          href="https://t.me/+2B2X3SRCRJU1YWQ1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Telegram
+        </a>
+
+        <a href="#disclaimer">
+          Disclaimer
+        </a>
+
+      </div>
+
+      <!-- Kirtnix Digital Agency -->
+      <p style="margin-top:12px;font-size:10px;">
+        <a
+          href="https://t.me/+G84KwpEa2V0yYTU1"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="
+            display:inline-block;
+            color:#f0c14b;
+            text-decoration:none;
+            font-weight:700;
+            padding:3px 9px;
+            border:1px solid rgba(240,193,75,0.35);
+            border-radius:6px;
+            background:rgba(240,193,75,0.06);
+          "
+        >
+          Ads by Kirtnix Digital Agency
+        </a>
+      </p>
+
+    </footer>
+
+  </main>
+
+  <script>
+    document.querySelectorAll('a[data-cta]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (typeof fbq === 'function') {
+          fbq('track', 'Subscribe', { content_name: link.dataset.cta });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
