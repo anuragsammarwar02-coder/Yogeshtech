@@ -495,9 +495,7 @@ src="https://www.facebook.com/tr?id=2293420631492866&ev=PageView&noscript=1"
 
       <a
         class="cta-primary"
-        href="https://t.me/+R409gv4duQZhMjJl"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="tg://join?invite=R409gv4duQZhMjJl"
         data-cta="primary"
       >
         <span class="telegram-icon">➤</span>
@@ -616,9 +614,7 @@ src="https://www.facebook.com/tr?id=2293420631492866&ev=PageView&noscript=1"
     <!-- SECONDARY CTA -->
     <a
       class="cta-secondary"
-      href="https://t.me/+R409gv4duQZhMjJl"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="tg://join?invite=R409gv4duQZhMjJl"
       data-cta="secondary"
     >
       Open Telegram Channel
@@ -635,10 +631,8 @@ src="https://www.facebook.com/tr?id=2293420631492866&ev=PageView&noscript=1"
       <div class="footer-links">
 
         <a
-          href="https://t.me/+R409gv4duQZhMjJl"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          href="tg://join?invite=R409gv4duQZhMjJl"
+          >
           Telegram
         </a>
 
@@ -679,6 +673,8 @@ src="https://www.facebook.com/tr?id=2293420631492866&ev=PageView&noscript=1"
         if (typeof fbq === 'function') {
           fbq('track', 'Subscribe', { content_name: link.dataset.cta });
         }
+        // href is a tg:// deep link, so the installed Telegram app is opened
+        // directly instead of showing Telegram's browser preview page.
       });
     });
   </script>
